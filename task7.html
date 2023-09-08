@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task 2</title>
+    <style>
+        .v-nav {
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: 2px solid black;
+            margin-right: 70%;
+        }
+
+        .v-nav-div {
+            border: 0px solid white;
+            background-color: skyblue;
+        }
+
+        .view:hover {
+            background-color: orange;
+        }
+
+        .view {
+            padding: 10px;
+            font-size: 25px;
+            color: blue;
+        }
+
+        .active {
+            background-color: orange;
+            color: white;
+        }
+
+        .h-nav {
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: 2px solid black;
+            margin-right: 50%;
+        }
+
+        .h-nav-div {
+            display: inline;
+            border: 1px solid white;
+            background-color: rgb(188, 184, 184);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .view1 {
+            padding: 10px;
+            font-size: 25px;
+            font-weight: 300;
+            color: blue;
+            border-right: 1px solid blue;
+        }
+
+        .view1:hover {
+            background-color: grey;
+            color: white;
+        }
+
+        .vas {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .ative {
+            background-color: grey;
+            color: white;
+        }
+
+        .v,
+        .h {
+            width: 48%;
+        }
+    </style>
+</head>
+
+<body>
+  <a href = "./index.html">Go back</a>
+    <div class="vas">
+        <div class="v">
+            <div>
+                <h4><b>Vertical Navigation Bar</b></h4>
+            </div>
+            <div class="v-nav">
+                <div class="v-nav-div">
+                    <div class="view active"><label><b>Home</b></label></div>
+                    <div class="view"><label><b>Java</b></label></div>
+                    <div class="view"><label><b>CSS</b></label></div>
+                    <div class="view"><label><b>HTML</b></label></div>
+                    <div class="view"><label><b>Boot strap</b></label></div>
+                </div>
+            </div>
+        </div>
+        <div class="h">
+            <div>
+                <h4><b>Horizontal Navigation Bar</b></h4>
+            </div>
+            <div class="h-nav">
+                <div class="h-nav-div">
+                    <div class="view1 ative"><label><b>Home</b></label></div>
+                    <div class="view1"><label><b>Java</b></label></div>
+                    <div class="view1"><label><b>CSS</b></label></div>
+                    <div class="view1"><label><b>html</b></label></div>
+                    <div class="view"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
